@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  font-family: "Noto Sans SC", sans-serif;
+  font-size: 13px;
+  letter-spacing: 3px;
+  box-sizing: border-box;
+}
+.wrapper {
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.logo {
+  display: inline;
+  color: white;
+  text-align: left;
+  font-size: 25px;
+  width: 140px;
+  height: 60px;
+}
+.page_header {
+  padding: 20px;
+  height: 610px;
+  background: url(./images/image-asset.jpeg) center no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.page_header_line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#Foundation {
+  letter-spacing: 5px;
+  margin-top: -5px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#about,
+a,
+button {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  line-height: 1em;
+  margin: 10px 20px;
+  background: transparent;
+}
+button {
+  border-radius: 300px;
+  padding: 13px 18px;
+}
+.dropdown,
+#about {
+  display: inline;
+}
+
+#Sustainibility {
+  font-family: garamond;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-transform: none;
+  line-height: 1.5em;
+  color: #fff;
+  margin: 140px auto 0;
+}
+#head {
+  font-weight: 1000;
+  font-style: normal;
+  font-size: 68px;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 30px;
+}
+.green_bud {
+  border-radius: 300px;
+  padding: 13px 30px;
+  background: #36b3a8;
+}
+.hz {
+  text-align: center;
+  white-space: pre-wrap;
+  font-family: garamond;
+  font-weight: 600;
+  color: rgba(26, 26, 26, 0.7);
+  /* margin: 1em 0 0.5em; */
+}
+.hz p {
+  white-space: nowrap;
+}
+.hz a {
+  color: #36b3a8;
+  text-transform: none;
+  margin: 0;
+}
+.photo_links {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  white-space: pre-wrap;
+}
+.photo_links img {
+  min-height: 225px;
+  min-width: 300px;
+}
+.he {
+  text-transform: uppercase;
+  color: #bdbdbd;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 5px 20px;
+  background: transparent;
+}
+.txt {
+  font-size: 15px;
+  width: 500px;
+  margin-top: -40px;
+}
+.footer {
+  height: 70vh;
+  background: #1f1f1f;
+  text-align: center;
+}
+.sign_in {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 320px;
+  background: #f7f7f7;
+  color: black;
+  margin: 0;
+  padding: 60px 0;
+}
+#sub {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.sign_in input {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  margin: 40px 5px;
+  padding: 17px 5px 17px 20px;
+}
+.sign_in #mail {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #bdbdbd;
+}
+.sign_in .sup {
+  text-transform: uppercase;
+  color: #fff;
+  background: #1f1f1f;
+  padding: 15px 30px;
+}
+.address {
+  display: inline;
+}
+#temp {
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer .foot_end {
+  padding: 60px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.lowest {
+  margin-top: 40px;
+  color: rgba(255, 255, 255, 0.4);
+}
+#power {
+  display: inline;
+  letter-spacing: 0px;
+}
+.lowest #Squarespace {
+  padding: 0;
+  margin: 0;
+  letter-spacing: 0px;
+  color: rgba(255, 255, 255, 0.4);
+  display: inline - block;
+  text-transform: capitalize;
+  padding-bottom: 1px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
