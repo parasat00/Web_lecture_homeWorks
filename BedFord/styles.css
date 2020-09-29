@@ -7,7 +7,7 @@
 }
 .wrapper {
   display: grid;
-  grid-template-rows: 1fr auto;
+  grid-template-rows: 2000px 500px;
 }
 
 .logo {
@@ -163,6 +163,7 @@ button {
 
 .footer .foot_end {
   padding: 60px;
+  padding-bottom: 30px;
   color: rgba(255, 255, 255, 0.8);
 }
 .lowest {
