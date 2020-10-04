@@ -5,12 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Intro</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
   <body>
+    <div class="mobil">
+      <div class="mob">
+        <img src="./images/unnamed.jpg" alt="logo" />
+        <div class="flexim">
+          <i class="fas fa-mobile-alt"></i>
+          <div>Установить приложение <span> ВКонтакте</span></div>
+          <i class="fa fa-angle-right"></i>
+        </div>
+      </div>
+      <div class="mob">
+        <div>
+          Мобильная версия поможет Вам оставаться ВКонтакте, даже если Вы далеко
+          от компьютера.
+        </div>
+        <input
+          class="searching_txt"
+          type="text"
+          name=""
+          placeholder="Телефон или email"
+        />
+        <input class="searching_txt" type="text" name="" placeholder="Поиск" />
+        <input class="but" type="button" value="Войти" />
+        <a id="forget" href="#">Забыли пароль?</a>
+        <div id="another">Впервые Вконтакте?</div>
+        <input id="zareg" type="button" value="Зарегистрироваться" />
+        <button><i class="fa fa-google"></i>Войти через Google</button>
+        <button><i class="fa fa-facebook-square"></i>Войти через Facebook</button>
+        </div>
+      </div>
+    </div>
+
     <div class="page_wrapper">
       <div class="page_header">
         <div id="page_header_line">
@@ -29,6 +61,46 @@
         </div>
       </div>
       <div class="content">
+        <div class="login_4_mobile">
+          <div class="log_header">ВКонтакте для мобильных устройств</div>
+          <div class="log_info">
+            Установите официальное мобильное приложение ВКонтакте и оставайтесь
+            в курсе новостей Ваших друзей, где бы Вы ни находились.
+          </div>
+          <a
+            class="_4_android"
+            href="https://play.google.com/store/apps/details?id=com.vkontakte.android"
+          >
+            <img src="./images/reg_android_ru.png" alt="ссылка для андроида"
+          /></a>
+          <a class="_4_iphone" href="https://apps.apple.com/ru/app/id564177498">
+            <img src="./images/reg_iphone_ru.png" alt=""
+          /></a>
+          <br />
+          <div class="androiphone">
+            <i class="fa fa-android icon"></i
+            ><a
+              class="androiphone_2"
+              href="https://play.google.com/store/apps/details?id=com.vkontakte.android"
+            >
+              VK для Android</a
+            >
+          </div>
+          <div class="androiphone">
+            <i class="fa fa-apple icon"></i
+            ><a
+              class="androiphone_2"
+              href="https://apps.apple.com/ru/app/id564177498"
+            >
+              VK для IPhone</a
+            >
+          </div>
+          <div>
+            <a class="androiphone_2" href="https://vk.com/products"
+              >Все продукты ></a
+            >
+          </div>
+        </div>
         <div class="big_column">
           <div class="sign_in">
             <input type="text" class="inputs" placeholder="Телефон или email" />
@@ -44,12 +116,7 @@
             <input type="text" class="inputs" placeholder="Ваше имя" />
             <input type="text" class="inputs" placeholder="Ваша фамилия" />
             <div class="label">
-              Дата рождения<span
-                class="hint_icon"
-                data-title="<b>Заполненная дата рождения</b> позволит друзьям легче найти Вас, а также подбирать для Вас интересные материалы.<br>Вы сможете всегда настроить видимость Вашей даты рождения в редактировании профиля."
-                onmouseover="showHint(this);"
-                >::after</span
-              >
+              Дата рождения <i class="fa fa-question-circle"></i>
             </div>
             <div class="dr">
               <select name="day" id="">
@@ -126,46 +193,6 @@
             </div>
             <a class="androiphone_3" href="https://connect.vk.com/promo?"
               >Узнать больше</a
-            >
-          </div>
-        </div>
-        <div class="login_4_mobile">
-          <div class="log_header">ВКонтакте для мобильных устройств</div>
-          <div class="log_info">
-            Установите официальное мобильное приложение ВКонтакте и оставайтесь
-            в курсе новостей Ваших друзей, где бы Вы ни находились.
-          </div>
-          <a
-            class="_4_android"
-            href="https://play.google.com/store/apps/details?id=com.vkontakte.android"
-          >
-            <img src="./images/reg_android_ru.png" alt="ссылка для андроида"
-          /></a>
-          <a class="_4_iphone" href="https://apps.apple.com/ru/app/id564177498">
-            <img src="./images/reg_iphone_ru.png" alt=""
-          /></a>
-          <br />
-          <div class="androiphone">
-            <i class="fa fa-android icon"></i
-            ><a
-              class="androiphone_2"
-              href="https://play.google.com/store/apps/details?id=com.vkontakte.android"
-            >
-              VK для Android</a
-            >
-          </div>
-          <div class="androiphone">
-            <i class="fa fa-apple icon"></i
-            ><a
-              class="androiphone_2"
-              href="https://apps.apple.com/ru/app/id564177498"
-            >
-              VK для IPhone</a
-            >
-          </div>
-          <div>
-            <a class="androiphone_2" href="https://vk.com/products"
-              >Все продукты ></a
             >
           </div>
         </div>
