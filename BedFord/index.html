@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <div class="wrapper">
@@ -22,6 +26,10 @@
                 <div id="Foundation">foundation</div>
               </div>
             </div>
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkBtn">
+              <i class="fa fa-bars"></i>
+            </label>
             <ul class="upper_menu">
               <a href="#">Home</a>
               <div class="dropdown">
@@ -40,7 +48,7 @@
               </button>
             </ul>
           </div>
-          <div style="text-align: center">
+          <div class="centered_txt">
             <div id="Sustainibility">Sustainibility</div>
             <div id="head">starts with you</div>
             <a class="green_bud" href="#">learn more</a>
@@ -73,7 +81,12 @@
         </div>
         <div style="padding: 40px; width: 100%"></div>
         <div class="photo_links">
-          <img src="./images/bridge.jpeg" alt="bridge" />
+          <img
+            src="./images/bridge.jpeg"
+            alt="bridge"
+            width="500"
+            height="375"
+          />
           <div style="margin-left: 2%">
             <div class="he">About</div>
             <div class="txt">
@@ -83,7 +96,7 @@
             <a class="green_bud" href="#">learn more</a>
           </div>
         </div>
-        <div style="padding: 40px; width: 100%"></div>
+        <div style="padding: 40px; width: 90%"></div>
         <div class="photo_links">
           <div style="margin-right: 2%">
             <div class="he">Take action</div>
@@ -93,7 +106,12 @@
             </div>
             <a class="green_bud" href="#">Find out how</a>
           </div>
-          <img src="./images/waterfall.jpg" alt="waterfall" />
+          <img
+            src="./images/waterfall.jpg"
+            alt="waterfall"
+            width="500"
+            height="375"
+          />
         </div>
         <div style="padding: 40px; width: 100%"></div>
       </div>
@@ -103,7 +121,7 @@
           <div style="font-size: 12px">
             Sign up with your email address to receive news and updates.
           </div>
-          <div>
+          <div class="flexer">
             <input
               id="mail"
               type="email"

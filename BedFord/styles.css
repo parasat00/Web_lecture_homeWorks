@@ -4,10 +4,11 @@
   font-size: 13px;
   letter-spacing: 3px;
   box-sizing: border-box;
+  text-align: center;
 }
 .wrapper {
   display: grid;
-  grid-template-rows: 2000px 500px;
+  grid-template-rows: 1fr auto;
 }
 
 .logo {
@@ -17,6 +18,7 @@
   font-size: 25px;
 }
 .page_header {
+  position: relative;
   padding: 20px;
   height: 650px;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -25,6 +27,7 @@
 }
 .page_header_line {
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
 }
@@ -64,7 +67,6 @@ button {
   text-transform: none;
   line-height: 1.5em;
   color: #fff;
-  margin: 140px auto 0;
 }
 #head {
   font-weight: 700;
@@ -104,8 +106,10 @@ button {
   white-space: pre-wrap;
 }
 .photo_links img {
-  min-height: 225px;
-  min-width: 300px;
+  margin: 15px;
+  width: 100%;
+  max-width: 450px;
+  height: auto;
 }
 .he {
   text-transform: uppercase;
@@ -134,13 +138,16 @@ button {
   margin: 0;
   padding: 60px 0;
 }
+.sign_in #mail {
+  width: 250px;
+}
 #sub {
   font-size: 30px;
   margin-bottom: 20px;
 }
 .sign_in input {
   border: 1px solid rgba(0, 0, 0, 0.12);
-  margin: 40px 5px;
+  margin: 10px 5px;
   padding: 17px 5px 17px 20px;
 }
 .sign_in #mail {
@@ -183,4 +190,49 @@ button {
   text-transform: capitalize;
   padding-bottom: 1px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+#check {
+  display: none;
+}
+.checkBtn {
+  display: none;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.centered_txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.flexer {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 830px) {
+  /* .page_header {
+    background-size: 100% 100%;
+  } */
+  .checkBtn {
+    display: inline-block;
+  }
+  .page_header_line ul {
+    display: none;
+  }
+  .photo_links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .flexer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sign_in .sup {
+    width: 150px;
+  }
 }
