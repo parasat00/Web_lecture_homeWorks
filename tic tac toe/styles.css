@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background: lightgray;
+}
+table {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-collapse: collapse;
+}
+td {
+  border: 2px solid black;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+  font-size: 70px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+table tr:first-child td {
+  border-top: none;
+}
+table tr:last-child td {
+  border-bottom: none;
+}
+table tr td:first-child {
+  border-left: none;
+}
+table tr td:last-child {
+  border-right: none;
+}
+button {
+  padding: 1em 1.5em;
+  background: white;
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*  */
+  font-size: 30px;
+  cursor: pointer;
+}
+button:hover {
+  background: black;
+  color: white;
+  border: 5px solid white;
+}
+.endgame {
+  display: none;
+  font-size: 3em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.endgame .text {
+  color: crimson;
+  text-align: center;
+  margin-top: 150px;
+  font-size: 70px;
+}
