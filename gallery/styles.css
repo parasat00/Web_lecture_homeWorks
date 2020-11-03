@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#daddy {
+  text-align: center;
+}
+#daddy h1 {
+  margin: 15px;
+}
+#manga-album img {
+  margin: 7px;
+  height: 12vw;
+  animation: fade 5s;
+  text-align: center;
+}
+#front-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100vh;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#front-img img {
+  max-width: 100%;
+  height: 100%;
+}
+#front-img.hide {
+  display: none;
+}
+.scroll-not {
+  overflow: hidden;
+}
+@media screen and (max-width: 1100px) {
+  #front-img img {
+    max-width: 80%;
+    max-height: 80%;
+  }
+}
