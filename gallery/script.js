@@ -9,6 +9,7 @@ front_img.addEventListener("click", doubleClicker);
 front_img.addEventListener("touchmove", dragger);
 front_img.addEventListener("pointerdown", startingX);
 front_img.addEventListener("pointerup", endingX);
+
 for(let i = 0; i < MANGA_PAGES.length; i++) {
  const page = MANGA_PAGES[i];
  const img = createIMG(page);
@@ -21,6 +22,8 @@ function createIMG(source) {
  return img;
 }
 function Clicker(event) {
+  front_img.classList.remove('goToRight');
+  front_img.classList.remove('goToLeft');
  const img = createIMG(event.currentTarget.src);
  front_img.style.top = window.pageYOffset + 'px';
  document.body.classList.add('scroll-not');
@@ -29,6 +32,7 @@ function Clicker(event) {
  document.addEventListener('keyup', onUpKey);
 }
 function click(string) {
+  
  const img = createIMG(string);
  front_img.style.top = window.pageYOffset + 'px';
  document.body.classList.add('scroll-not');
@@ -60,17 +64,20 @@ function toRight() {
  for(let i = 0; i < MANGA_PAGES.length; i++) {
   if(front_img.innerHTML.includes(MANGA_PAGES[i])) {
    index = i;
-   front_img.style.transform = '';
    break;
   }
  }
  doubleClicker(index);
+ front_img.style.transform = '';
  if(index !== MANGA_PAGES.length -1) {
+   front_img.classList.remove('goToRight');
+   front_img.classList.add('goToLeft');
    click(MANGA_PAGES[index+1]);
    index++;
   }
 }
 function toLeft() {
+  
   var index;
  for(let i = 0; i < MANGA_PAGES.length; i++) {
   if(front_img.innerHTML.includes(MANGA_PAGES[i])) {
@@ -79,11 +86,15 @@ function toLeft() {
    break;
   }
  }
+ 
   doubleClicker(index);
  if(index !== 0) {
+   front_img.classList.remove('goToLeft');
+   front_img.classList.add('goToRight');
     click(MANGA_PAGES[index-1]);
     index--;
   }
+  
 }
 function startingX(event) {
   event.preventDefault();
@@ -99,9 +110,12 @@ function dragger(event) {
   event.preventDefault();
   var value = lastX - initialX;
   if(value > 100) {
-    toRight();
+    toLeft();
+    //
   } 
   else if(value < -100) {
-    toLeft();
+    toRight();
+    //
+    //
   }
 }
