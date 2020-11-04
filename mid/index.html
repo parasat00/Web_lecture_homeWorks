@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="./styles.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script src="./scripts/slider.js" defer></script>
+ <script src="./scripts/manga-page.js" defer></script>
+ <script src="https://code.jquery.com/pep/0.4.1/pep.js"></script>
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <title>Mid site</title>
+</head>
+<body>
+  <section id="x" class="hide" onclick="doubleClicker()"><i class="fa fa-times"></i></section>
+  <section id="ArrowRight" class="hide"><i class="fas fa-angle-right"></i></section>
+  <section id="ArrowLeft" class="hide"><i class="fas fa-angle-left"></i></section>
+  <section id="topBtn" onclick="toTop()"><i class="fa fa-arrow-circle-up"></i></section>
+  <div style="margin-bottom: 130px;">
+  <nav>
+    <section class="whats-new logo" id="loGo" onclick="toTop()">
+   <img src="./images/jolly-roger.ico" alt="jolly-roger" class="jolly-roger">
+     <div class="logo-word">
+      <h2>One Piece</h2>
+      <div>fanpage</div>
+     </div>
+   </section>
+   <button class="bars"><i class="fa fa-bars"></i></button>
+   <ul class="nav-list">
+    <li><a href="#manga">Manga</a></li>
+    <li><a href="#anime">Anime</a></li>
+    <li><a href="#forum">Forum</a></li>
+    <li><a href="#contacts">Contacts</a></li>
+   </ul>
+  </nav>
+  
+  <div class="slides-w-dots">
+  <div id="top" class="slideShow">
+   <div class="slide fade">
+    <label class="numb-txt">1 / 3</label>
+    <img src="./images/one-piece-cov.jpg" alt="">
+    <div class="txt">Watch an Anime</div>
+   </div>
+   <div class="slide fade">
+    <label class="numb-txt">2 / 3</label>
+    <img src="./images/manga.jpg" alt="">
+    <div class="txt">Read Manga</div>
+   </div>
+   <div class="slide fade">
+    <label class="numb-txt">3 / 3</label>
+    <img src="./images/forum.jpg" alt="">
+    <div class="txt">Discuss in Forum</div>
+   </div>
+  </div>
+  <br>
+  <div style="text-align:center;">
+   <span class="dot"></span>
+   <span class="dot"></span>
+   <span class="dot"></span>
+  </div>
+  </div>
+  </div>
+  <section id="manga">
+    <div class="line-break"></div>
+    <div class="line-break"></div>
+    <div class="line-break"></div>
+    <div class="whats-new under-lufy" data-aos="fade-left">
+        <img src="./images/20302-6-monkey-d-luffy-file.png" alt="" data-aos="fade-up"
+     data-aos-duration="3000">
+        <div>
+        <h1>Overview</h1>
+        <p>As a child, Monkey D. Luffy was inspired to become a pirate by listening to the tales of the buccaneer "Red-Haired"
+          Shanks. But Luffy's life changed when he accidentally ate the Gum-Gum Devil Fruit and gained the power to stretch like
+          rubber...at the cost of never being able to swim again! Years later, still vowing to become the king of the pirates,
+          Luffy sets out on his adventure... one guy alone in a rowboat, in search of the legendary "One Piece," said to be the
+          greatest treasure in the world...</p>
+      </div>
+    </div>
+    <div class="line-break"></div>
+    <h1 data-aos="fade-right"
+     data-aos-offset="200"
+     data-aos-easing="ease-in-sine">One piece Manga.</h1>
+    <h2 data-aos="fade-left"
+     data-aos-offset="200"
+     data-aos-duration="500">What is hapening now?</h2>
+    <br>
+    <div class="whats-new" >
+      <img src="./images/kaido.jpg" alt="manga-img">
+      <div class="right-txt">
+        <h3>The latest chapter of the manga: <span>993</span></h3>
+        <h3>Each chapter releases every <span>1-2 week(s)</span>.</h3>
+        <h3>Chapter review:</h3>
+        <p>One Piece chapter 993 opens with an explanation of the Fire Festival. Every year in the Flower Capital, the people of
+        Wano celebrate in the hope that someday the samurai of the Kozuki will save them. This dream was the driving force that
+        kept them going. Able to breathe clean air, taste great water, and avoid death, the Fire Festival was the one day they
+        were free. Oda is reminding us of what’s at stake. Meanwhile, Queen releases Excite Bullets indiscriminately into the
+        crowd infecting victims, turning them into icy demons. The infection spreads through contact Queen orders the doors
+        closed to trap everyone inside...</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="line-break"></div>
+    <h1 data-aos="flip-right">The latest chapter of the manga: <span>993</span></h1>
+    <div class="line-break"></div>
+    <section id="manga-album" data-aos="zoom-out-up"></section>
+    <section id="front-img" class="hide" touch-action="none"></section>
+  </section>
+  <section id="anime">
+    <div class="line-break"></div>
+    <h1>One piece anime</h1>
+    <h3>The next episode(<span>episode 948</span>) will be aired on <span>Sun Nov 01, 2020</span>.</h3>
+    <h3>Preview of the next episode:</h3>
+    <div class="iframe-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/k8K9OoSt1eo" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+    <div class="smthng">
+        <div class="crimson-line"></div>
+        <div style="margin: 50px 0;">
+          <label for="but">To see more One piece episodes:</label>
+          <input type="button" id="but" class="button" value="click here">
+        </div>
+        <div class="crimson-line"></div>
+    </div>
+  </section>
+  <section id="forum">
+    <div class="forum-img">
+      <div class="header">
+        <h1>Join us in forum</h1>
+        <div>If you want to find people with mutual interests</div>
+        <br>
+        <button class="button">Join Us</button>
+      </div>
+      <div class="img-gradient"></div>
+    </div>
+    <br>
+    <h1>theories from forum</h1>
+    <div class="whats-new">
+      <div class="card" data-aos="flip-left" data-aos-anchor-placement="top-center" data-aos-duration="2000">
+        <img src="./images/blackbeard.png" alt="theory">
+        <div class="card-box">
+          <h4>The Reason why Blackbeard cannot turn himself into Darkness despite being a Logia</h4>
+          <p>This is a theory I have regarding how Blackbeard steals devil fruits using his Yami Yami no Mi, and why he cannot turn
+          himself into darkness despite being a Logia. First, I’m looking at how Crocodile’s devil fruit has a natural weakness.
+          If Crocodile is wet, he cannot turn himself into sand. We also know...</p>
+          <button class="button">Read More</button>
+        </div>
+      </div>
+      
+      <div class="card" data-aos="flip-left" data-aos-anchor-placement="top-center" data-aos-duration="2000">
+        <img src="./images/luf-kai.jpg" alt="theory">
+        <div class="card-box">
+          <h4>Why Luffy defeating Kaido and surpassing him now is crucial to the Story!</h4>
+          <p>These days in the fanbase, there has been a great increase of Luffy underestimation, and his importance to HIS story. A
+          lot of people are confused and are expecting others to defeat the Yonko Luffy is after which is ridiculous. It is like
+          all the 8+years worth of set for this moment is nonexistent to them. One […]</p>
+          <button class="button">Read More</button>
+        </div>
+      </div>
+
+      <div class="card" data-aos="flip-left" data-aos-anchor-placement="top-center" data-aos-duration="2000">
+        <img src="./images/kai-t.jpg" alt="theory">
+        <div class="card-box">
+          <h4>Kaido is way more powerful than we thought!</h4>
+          <p>Befitting his bulk, Kaido is legendary for his supreme physical power as the strongest creature in the world. He
+          possesses nigh-indestructible durability, even without using Busoshoku Haki! He took multiple powerful hits from Luffy’s
+          Gear Third while in his dragon form and transformed back into his human form after being pummeled into the ground, and
+          […]</p>
+          <button class="button">Read More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contacts">
+    <br>
+    <h1>Contacts</h1>
+    <div class="whats-new base">
+      <div>
+        <h2>Email</h2>
+        <div>190107059@stu.sdu.edu.kz</div>
+      </div>
+      <div>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-telegram"></i></a>
+        <a href="#"><i class="fa fa-vk"></i></a>
+        <a href="#"><i class="fa fa-youtube-play"></i></a>
+      </div>
+      <img src="./images/luffy-sitting.jpg" alt="images">
+    </div>
+    <div class="line">&copy;Education Theme.All Rights Reserved</div>
+  </footer>
+
+</body>
+</html>
