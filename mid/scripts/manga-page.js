@@ -4,6 +4,9 @@ const MANGA_PAGES = [
 ];
 var initialX;
 var lastX;
+const barsButton = document.getElementById("barMen");
+var nav_list = document.getElementById("navigation-l");
+barsButton.addEventListener("click", showNav);
 const mybutton = document.getElementById("topBtn");
 const Xbutton = document.getElementById("x");
 const ArrowRight = document.getElementById("ArrowRight");
@@ -148,9 +151,20 @@ const scrollToTop = () => {
 function toTop() {
   scrollToTop();
 }
-function LeftClick(event) {
+function LeftClick() {
   toLeft();
 }
-function RightClick(event) {
+function RightClick() {
   toRight();
+}
+function showNav() {
+  if(barsButton.style.display === "block") {
+    nav_list.nav_list.classList.add('hide');
+  }
+  if(nav_list.classList.contains('hide')) {
+    nav_list.classList.remove('hide');
+  }
+  else{
+    nav_list.classList.add('hide');
+  }
 }

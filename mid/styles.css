@@ -461,7 +461,15 @@ footer a {
     display: block;
   }
   .nav-list {
-    display: none;
+    position: fixed;
+    top: 70px;
+    right: 0;
+    background: #070721;
+  }
+  .nav-list li {
+    display: block;
+    font-size: 5vw;
+    text-align: center;
   }
   .whats-new p {
     width: 90%;
