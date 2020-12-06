@@ -1,0 +1,142 @@
+body {
+  background: #eaf5f8;
+}
+.fat {
+  width: 90%;
+  margin: auto auto 50px auto;
+}
+.whited {
+  padding: 1em 2em;
+  background: #fff;
+  width: 100%;
+  margin: 40px auto;
+}
+.whited a,
+.whited label {
+  text-decoration: none;
+  font-family: "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+  color: #527b8d;
+}
+.whited a:hover,
+footer a:hover {
+  color: #fcae01;
+}
+.fl {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.lor section {
+  padding: 30px;
+  background: #fff;
+  color: #527b8d;
+}
+.acc {
+  padding: 30px 10vw 30px 30px !important;
+  font-size: larger;
+  text-align: left;
+}
+.italic {
+  font-style: italic;
+}
+.lor section i {
+  color: #1a8de6;
+  font-size: 50px;
+  margin-right: 20px;
+}
+.log {
+  margin: 0 30px;
+}
+.log,
+.reg {
+  width: 30%;
+  background: #f2f9fb !important;
+}
+.lor p {
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+.fat button,
+input[type="button"] {
+  padding: 0.7em 2em;
+  background: #1a8de6;
+  color: #fff;
+  font-size: large;
+  cursor: pointer;
+}
+.lor .fl,
+.lor p {
+  justify-content: flex-start;
+  border-bottom: 1px solid #dbe8ed;
+}
+.lor .fl {
+  padding-bottom: 5px;
+}
+.reg label {
+  display: block;
+  margin: 20px 0 10px;
+}
+.reg input[type="text"],
+.reg input[type="password"] {
+  border: 1px solid #dbe8ed;
+  width: 95%;
+  padding: 10px;
+}
+.fp {
+  margin: 40px 0 20px;
+}
+.fp a {
+  text-decoration: none;
+  color: #fcae01;
+}
+.fp a:hover {
+  color: #1a8de6;
+}
+@media screen and (max-width: 1100px) {
+  .acc {
+    padding: 15px 7vw 15px 10px !important;
+    font-size: 2vw;
+  }
+  .lor section i {
+    font-size: 40px;
+  }
+  .fat button,
+  input[type="button"] {
+    padding: 0.3em 1em;
+  }
+  .fl h3,
+  .fl .italic {
+    text-align: center;
+  }
+  .log,
+  .reg {
+    width: 35%;
+  }
+  .log p,
+  .reg label {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 765px) {
+  .log p,
+  .reg label {
+    font-size: 12px;
+  }
+  .log .fl {
+    flex-direction: row;
+  }
+  .fl {
+    flex-direction: column;
+  }
+  .acc {
+    width: 100%;
+  }
+  .log,
+  .reg {
+    width: 100%;
+  }
+  .log {
+    margin: 20px 0;
+  }
+}
