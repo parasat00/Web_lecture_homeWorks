@@ -1,0 +1,283 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main_shop {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-color: #f1f1f1;
+  padding: 20px 20px 50px;
+}
+ul {
+  list-style-type: none;
+}
+ul * {
+  margin: 5px 0;
+}
+.category_list {
+  width: 20%;
+  margin: 10px;
+  background: #fff;
+  padding: 20px;
+  font-size: larger;
+}
+.products_menu,
+.cart_menu {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.content {
+  margin: 10px 0;
+  width: 31%;
+  height: auto;
+  padding: 20px;
+  background: white;
+  text-align: center;
+  cursor: pointer;
+}
+.content * {
+  margin: 10px;
+}
+.img_container {
+  width: 100%;
+  height: 200px;
+  margin: 0 0 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.img_container:hover img {
+  overflow: hidden;
+  width: 120%;
+}
+.content img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  transition: 0.5s ease;
+}
+.text_info {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 0;
+  background-color: #fff;
+  overflow: hidden;
+  transition: 0.5s ease;
+  margin: 0;
+}
+.text_info:hover .overlay {
+  height: 100%;
+}
+.overlay button,
+form button {
+  padding: 0.7em 1.5em;
+  background: #56b621;
+  text-align: center;
+  width: 100%;
+  font-size: large;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.no_empty button:hover,
+.overlay button:hover,
+form button:hover {
+  background: #555;
+}
+.price {
+  color: #56b621;
+  font-size: larger;
+  font-weight: bold;
+}
+.hide {
+  display: none !important;
+}
+.show {
+  display: block;
+}
+.cart_menu {
+  width: 70%;
+}
+.cart_message {
+  width: 100%;
+  padding: 20px;
+}
+.cart_message h1 {
+  font-size: xx-large;
+}
+#attention {
+  width: 100px;
+  margin-right: 20px;
+}
+.empty_cart {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 20px;
+}
+.return {
+  width: 30% !important;
+  margin: 20px;
+}
+.no_empty {
+  padding: 20px;
+  background: #fff;
+  display: flex;
+  margin: 20px 0;
+}
+.no_empty img {
+  width: 30%;
+}
+.no_empty div {
+  width: 70%;
+  padding: 20px;
+}
+.no_empty p {
+  margin: 10px 0;
+  color: #56b621;
+  font-size: large;
+  font-weight: bold;
+}
+.no_empty h1 {
+  font-size: x-large;
+}
+.no_empty textarea {
+  width: 100%;
+  height: 40%;
+  border: none;
+}
+.no_empty button {
+  float: right;
+  background: #f11837;
+  color: #fff;
+  padding: 15px 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+footer {
+  margin-top: auto;
+}
+.buttons_n_total {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+.w_total div {
+  font-family: "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+  color: #56b621;
+  font-size: x-large;
+  font-weight: 600px;
+}
+@media screen and (max-width: 1025px) {
+  .content {
+    width: 45%;
+    /* min-width: 45%; */
+  }
+  #modal-inner {
+    width: 80%;
+  }
+  .overlay button {
+    font-size: medium;
+  }
+  .overlay {
+    position: static;
+    height: 50%;
+  }
+}
+@media screen and (max-width: 770px) {
+  .main_shop {
+    flex-direction: column;
+  }
+  .products_menu {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .category_list {
+    width: 100%;
+    margin: 0;
+  }
+  #modal-inner {
+    width: 95%;
+    flex-direction: column;
+    height: 60%;
+  }
+  #modal-inner div {
+    width: 90%;
+  }
+  .content {
+    padding: 10px;
+  }
+  .cart_menu {
+    width: 100%;
+  }
+  .cart_message {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  .img_container {
+    height: 150px;
+  }
+  .content {
+    width: 48%;
+  }
+  .text_info {
+    font-size: small;
+  }
+  #modal-inner {
+    height: 50%;
+  }
+  .overlay button {
+    font-size: small;
+  }
+  .no_empty {
+    flex-direction: column;
+  }
+  .no_empty img {
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+  }
+  .no_empty div {
+    width: 100%;
+    padding: 0;
+  }
+  .back_to_shop {
+    width: auto !important;
+  }
+}
+@media screen and (max-width: 350px) {
+  .overlay button {
+    font-size: smaller;
+  }
+  .text_info {
+    font-size: x-small;
+  }
+  .no_empty h1 {
+    font-size: medium;
+  }
+}

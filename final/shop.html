@@ -4,9 +4,16 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Shop Page</title>
+ <!-- aos -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
  <!-- general style -->
  <link rel="stylesheet" href="./styles/style.css">
- <script src="scripts/scipt.js" defer></script>
+ <!-- personal style -->
+ <link rel="stylesheet" href="./styles/shop.css">
+ <script src="./scripts/scipt.js" defer></script>
+ <!-- shop js -->
+ <script src="./scripts/shop.js" defer></script>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -79,8 +86,68 @@
   </div>
  </section>
 
+ <section class="main_shop">
+  <section class="category_list">
+   <h1>Categories</h1>
+   <ul>
+    <li>
+     <input type="checkbox" name="stroller" class="category_inputs" value="stroller" onclick="categorise()">
+    <label for="stroller">Strollers</label>
+   </li>
+
+   <li>
+    <input type="checkbox" name="swing" class="category_inputs" value="swing" onclick="categorise()">
+    <label for="swing">Swing</label>
+   </li>
+
+   <li>
+    <input type="checkbox" name="slide" class="category_inputs" value="slide" onclick="categorise()">
+    <label for="slide">Slide</label>
+   </li>
+
+   <li>
+    <input type="checkbox" name="play_mat" class="category_inputs" value="play_mat" onclick="categorise()">
+    <label for="play_mat">Playing mats</label>
+   </li>
+
+   </ul>
+  </section>
+
+  <section class="products_menu" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2500">
+  </section>
+ </section>
+
+ <section id="modal-view" class="hide">
+   <section id="modal-inner"></section>
+ </section>
+
+
+<div class="slides-w-dots advertisement">
+  <div id="top" class="slideShow">
+    <div class="slide- fade">
+      <img src="./images/advertisement/1.png" alt="">
+    </div>
+    <div class="slide- fade">
+      <img src="./images/advertisement/2.png" alt="">
+    </div>
+    <div class="slide- fade">
+      <img src="./images/advertisement/3.gif" alt="">
+    </div>
+    <div class="slide- fade">
+      <img src="./images/advertisement/4.png" alt="">
+    </div>
+    <div class="slide- fade">
+      <img src="./images/advertisement/5.jpg" alt="">
+    </div>
+  </div>
+
+
+
  <footer>
   <div class="line">Powered by <a href="https://vk.com/p.zhangbyrbay">Parasat Zhangbyrbay</a></div>
  </footer>
+ <script>
+  AOS.init();
+</script>
 </body>
 </html>

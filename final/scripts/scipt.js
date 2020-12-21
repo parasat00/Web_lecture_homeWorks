@@ -16,7 +16,6 @@ const mybutton = document.getElementById("topBtn");
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    console.log("i am here");
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
@@ -31,4 +30,17 @@ const scrollToTop = () => {
 }
 function toTop() {
   scrollToTop();
+}
+var ind = 0;
+showTheSlide();
+function showTheSlide() {
+ var s = document.getElementsByClassName("slide-");
+ for(let i = 0; i < s.length; i++) {
+  s[i].style.display = "none";
+ }
+ ind++;
+ if(ind > s.length) { ind = 1 }
+
+ s[ind - 1].style.display = "block";
+ setTimeout(showTheSlide, 5000);
 }

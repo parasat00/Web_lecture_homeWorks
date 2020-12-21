@@ -6,7 +6,10 @@
  <title>Cart Page</title>
  <!-- general style -->
  <link rel="stylesheet" href="./styles/style.css">
+ <link rel="stylesheet" href="./styles/shop.css">
  <script src="scripts/scipt.js" defer></script>
+ <!-- shop js -->
+ <script src="./scripts/cart.js" defer></script>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -71,6 +74,7 @@
  
  </nav>
 
+ 
  <section class="header">
   <h1>cart</h1>
   <div>
@@ -79,8 +83,68 @@
   </div>
  </section>
 
+
+<section class="main_shop">
+  <section class="category_list">
+    <h1>Shopping Cart</h1>
+  </section>
+
+  <section class="cart_menu">
+    <section class="cart_message">
+      
+      <section class="empty_cart">
+        <img src="./images/attention.png" alt="attention" id="attention">
+        <p>Your cart is currently empty.</p>
+      </section>
+      
+    </section>
+    
+    <section class="buttons_n_total">
+
+      <form action="./shop.html" class="no-border back_to_shop" id=" return">
+        <button type="submit">Return to Shop</button>
+      </form>
+
+      <section id="w_total">
+        <div>Total: <span id="here"></span></div>
+        <form action="./checkout.html" class="no-border back_to_shop" >
+          <button type="submit" style="width: 100%;">Checkout</button>
+        </form>
+      </section>
+
+    </section>
+
+  </section>
+</section>
+
+
+
+
+<div class="slides-w-dots advertisement">
+  <div id="top" class="slideShow">
+    <div class="slide- fade">
+      <img src="./images/advertisement/1.png" alt="">
+    </div>
+    <div class="slide- fade">
+      <img src="./images/advertisement/2.png" alt="">
+    </div>
+    <div class="slide- fade">
+      <img src="./images/advertisement/3.gif" alt="">
+    </div>
+    <div class="slide- fade">
+      <img src="./images/advertisement/4.png" alt="">
+    </div>
+    <div class="slide- fade">
+      <img src="./images/advertisement/5.jpg" alt="">
+    </div>
+  </div>
+
+
+
+
  <footer>
-  <div class="line">Powered by <a href="https://vk.com/p.zhangbyrbay">Parasat Zhangbyrbay</a></div>
+  <div class="line">Made by <a href="https://vk.com/p.zhangbyrbay">Parasat Zhangbyrbay</a></div>
  </footer>
+
 </body>
 </html>

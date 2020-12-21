@@ -4,6 +4,10 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Account Page</title>
+ <!-- aos -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
  <script src="scripts/scipt.js" defer></script>
  <!-- general style -->
  <link rel="stylesheet" href="./styles/style.css">
@@ -90,7 +94,7 @@
  
  <section class="fl lor">
   <section class="acc">Account</section>
-  <section class="log">
+  <section class="log"  data-aos="fade-left" data-aos-duration="2000">
    <div class="fl">
     <i class="fa fa-file-text-o"></i>
     <div>
@@ -103,7 +107,7 @@
    <button><a href="./register.html">Continue</a></button>
   </section>
   
-  <section class="reg">
+  <section class="reg" data-aos="fade-right" data-aos-duration="2000">
    <div class="fl">
     <i class="fa fa-key"></i>
     <div>
@@ -112,7 +116,7 @@
     </div>
    </div>
    <label for="email">Email Address </label>
-   <input type="text" placeholder="Email Address" name="email" required>
+   <input type="email" placeholder="Email Address" name="email" required>
    <br>
    <label for="psw">Password</label>
    <input type="password" placeholder="Password" name="psw" required>
@@ -121,8 +125,36 @@
   </section>
  </section>
  </div>
+
+
+<div class="slides-w-dots advertisement">
+  <div id="top" class="slideShow">
+    <div class="slide- fade">
+      <img src="./images/advertisement/1.png" alt="">
+    </div>
+    <div class="slide- fade">
+      <img src="./images/advertisement/2.png" alt="">
+    </div>
+    <div class="slide- fade">
+      <img src="./images/advertisement/3.gif" alt="">
+    </div>
+    <div class="slide- fade">
+      <img src="./images/advertisement/4.png" alt="">
+    </div>
+    <div class="slide- fade">
+      <img src="./images/advertisement/5.jpg" alt="">
+    </div>
+  </div>
+
+
+
+
  <footer>
-  <div class="line">Powered by <a href="https://vk.com/p.zhangbyrbay">Parasat Zhangbyrbay</a></div>
+  <div class="line">Made by <a href="https://vk.com/p.zhangbyrbay">Parasat Zhangbyrbay</a></div>
  </footer>
+
+ <script>
+  AOS.init();
+</script>
 </body>
 </html>

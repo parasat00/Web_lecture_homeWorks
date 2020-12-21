@@ -3,10 +3,11 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Forgotten Password</title>
+ <title>Checkout</title>
  <link rel="stylesheet" href="./styles/style.css">
+ <link rel="stylesheet" href="./styles/checkout.css">
  <link rel="stylesheet" href="./styles/account.css">
- <link rel="stylesheet" href="./styles/register.css">
+ <!-- font awesome -->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -36,7 +37,7 @@
 
 
  <section class="lower nav">
-  <div id="home">
+  <div id="home" class="active">
    <a href="./index.html">HOME</a>
   </div>
   <div id="cart">
@@ -48,7 +49,7 @@
   <div id="contacts">
    <a href="./contacts.html">CONTACTS</a>
   </div>
-  <div id="my_account" class="active">
+  <div id="my_account">
    <a href="./account.html">ACCOUNT</a>
   </div>
 
@@ -72,70 +73,87 @@
 </nav>
 
 <section class="header">
- <h1>ACCOUNT</h1>
+ <h1>checkout</h1>
  <div>
   <a href="./index.html">HOME </a>
-  <label>/ </label>
-  <a href="./account.html">ACCOUNT </a>
-  <label>/ FORGOTTEN PASSWORD</label>
+  <label> / </label>
+  <a href="./cart.html">CART </a>
+  <label>/ CHECKOUT</label>
  </div>
 </section>
 
 <div class="fat">
  <section class="whited">
   <a href="./index.html"><i class="fa fa-home"></i></a>
-  <a href="./account.html">/ Account /</a>
-  <label>Forgotten Password</label>
+  <label>/</label>
+  <a href="./cart.html"> Cart </a>
+  <label>/ Checkout</label>
  </section>
 
+
  <section class="fl lor">
-  <section class="acc">Account</section>
-  <section class="register_page Forgot">
-   <h1>Forgot your Password?</h1>
-   <p>Enter the e-mail address associated with your account. Click submit to have your password e-mailed to you.</p>
-   <h2>Your E-Mail Address</h2>
-   <form>
-    <div>
-     <label for="email" class="necessary">E-mail</label>
-     <input type="email" name="email" placeholder="E-mail Address--">
+  <section class="acc">Checkout</section>
+  <section class="all_content">
+   <section class="contain">
+    <h1>Step1: Checkout Options </h1>
+    <div class="flexer">
+     <div>
+      <h3>New Customer</h3>
+      <br>
+      <input type="radio" name="new-customer">
+      <label for="new-customer">Register Account</label>
+      <br>
+      <input type="radio" name="new-customer">
+      <label for="new-customer">Guest Checkout</label>
+
+      <p>By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the
+       orders
+       you have previously made.</p>
+      <button><a href="./register.html">Continue</a></button>
+     </div>
+
+     <div class="reg">
+      <h3>Returning Customer</h3>
+      <div class="italic">I am a returning customer</div>
+      <label for="email">Email Address </label>
+      <input type="email" placeholder="Email Address" name="email" required>
+      <br>
+      <label for="psw">Password</label>
+      <input type="password" placeholder="Password" name="psw" required>
+      <div class="fp"><a href="./forgotten_password.html">Forgotten Password</a></div>
+      <input type="button" value="Login">
+     </div>
     </div>
-   </form>
-   <div style="display: flex; justify-content: space-between; align-items: center;">
-    <form action="./account.html" class="no-border">
-     <button type="submit">Back</button>
-    </form>
-    <button type="submit">Continue</button>
-    
-   </div>
+   </section>
+   <section>
+    <h1>Step2: Account & Billing Details</h1>
+   </section>
+   <section>
+    <h1>Step3: Delivery Details</h1>
+   </section>
+   <section>
+    <h1>Step4: Delivery Method</h1>
+   </section>
+   <section>
+    <h1>Step5: Payment Method</h1>
+   </section>
+   <section>
+    <h1>Step6: Confirm Order</h1>
+   </section>
+
+
   </section>
  </section>
+
 </div>
 
 
-
-<div class="slides-w-dots advertisement">
-  <div id="top" class="slideShow">
-    <div class="slide- fade">
-      <img src="./images/advertisement/1.png" alt="">
-    </div>
-    <div class="slide- fade">
-      <img src="./images/advertisement/2.png" alt="">
-    </div>
-    <div class="slide- fade">
-      <img src="./images/advertisement/3.gif" alt="">
-    </div>
-    <div class="slide- fade">
-      <img src="./images/advertisement/4.png" alt="">
-    </div>
-    <div class="slide- fade">
-      <img src="./images/advertisement/5.jpg" alt="">
-    </div>
-  </div>
 
 
 
 <footer>
  <div class="line">Made by <a href="https://vk.com/p.zhangbyrbay">Parasat Zhangbyrbay</a></div>
 </footer>
+
 </body>
 </html>

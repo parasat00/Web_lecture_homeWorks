@@ -4,10 +4,15 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Final_project</title>
+ <!-- aos -->
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
  <!-- general style -->
  <link rel="stylesheet" href="./styles/style.css">
+ <link rel="stylesheet" href="./styles/shop.css">
  <script src="scripts/scipt.js" defer></script>
  <script src="scripts/home.js" defer></script>
+ <script src="scripts/shop.js" defer></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -88,8 +93,64 @@
   <a class="prev" onclick="toSlide(-1)">&#10094;</a>
   <a class="next" onclick="toSlide(1)">&#10095;</a>
  </section>
+
+<section class="garage_4_slide">
+ <section class="slide_wrapper">
+  <div class="slide_buttons">
+   <a href="./shop.html">Products</a>
+   <div class="buttons">
+    <button class="prev_slide"><i class="fa fa-chevron-left"></i></button>
+    <button class="next_slide"><i class="fa fa-chevron-right"></i></button>
+   </div>
+  </div>
+  <div class="slide_container">
+   <div id="track">
+   </div>
+  </div>
+ </section>
+ </section>
+
+ <section id="modal-view" class="hide">
+  <section id="modal-inner"></section>
+ </section>
+
+ <section class="welcome-card">
+  <h1 data-aos="fade-down" data-aos-duration="3000" data-aos-once="false" data-aos-anchor-placement="center-center">WELCOME!</h1>
+  <p data-aos="fade-up" data-aos-duration="3000" data-aos-once="false">BEBEK_ATYRAU is the reliable online toy store with wide variety of products, <br> that will make you and your children happy!!!</p>
+  <form action="./shop.html" class="no-border" data-aos="zoom-in" data-aos-duration="3000">
+   <button type="submit">Start shopping now!</button>
+  </form>
+ </section>
+
+
+ 
+ <div class="slides-w-dots advertisement">
+  <div id="top" class="slideShow">
+   <div class="slide- fade">
+    <img src="./images/advertisement/1.png" alt="">
+   </div>
+   <div class="slide- fade">
+    <img src="./images/advertisement/2.png" alt="">
+   </div>
+   <div class="slide- fade">
+    <img src="./images/advertisement/3.gif" alt="">
+   </div>
+   <div class="slide- fade">
+    <img src="./images/advertisement/4.png" alt="">
+   </div>
+   <div class="slide- fade">
+    <img src="./images/advertisement/5.jpg" alt="">
+   </div>
+  </div>
+
+
+
+
  <footer>
-  <div class="line">Powered by <a href="https://vk.com/p.zhangbyrbay">Parasat Zhangbyrbay</a></div>
+  <div class="line">Made by <a href="https://vk.com/p.zhangbyrbay">Parasat Zhangbyrbay</a></div>
  </footer>
+ <script>
+  AOS.init();
+ </script>
 </body>
 </html>

@@ -1,0 +1,111 @@
+.fl {
+  justify-content: flex-start !important;
+}
+.acc {
+  margin-right: 20px;
+}
+.fat {
+  width: 70%;
+}
+.register_page {
+  background: #eaf5f8 !important;
+  padding: 10px 20px 30px !important;
+  color: #527b8d;
+  width: 70%;
+}
+.register_page a,
+.policy a {
+  color: #fcae01;
+}
+.register_page a:hover,
+.policy a:hover {
+  color: #7ebd23;
+  text-decoration: underline;
+}
+
+.register_page h4 {
+  margin: 20px 0;
+  font-size: larger;
+}
+form {
+  padding: 30px 0;
+  border-top: 2px solid #dbe8e0;
+}
+form div {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0;
+}
+form input[type="tel"],
+form input[type="text"],
+form input[type="email"],
+form select {
+  width: 70%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #757575 !important;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  margin-left: 30px;
+}
+.necessary::before {
+  content: "* ";
+  color: #f00;
+  font-weight: bold;
+}
+.policy {
+  float: right;
+}
+.policy button {
+  margin-top: 20px;
+  float: right;
+  background: #7ebd23;
+}
+button:hover {
+  background: #555;
+}
+table h4 {
+  width: 90%;
+}
+h1 {
+  font-size: 30px;
+  font-weight: 550;
+}
+.Forgot p {
+  font-size: 15px;
+}
+.no-border {
+  border: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .fat {
+    width: 90%;
+  }
+  .register_page {
+    width: auto !important;
+  }
+}
+@media screen and (max-width: 550px) {
+  form input[type="tel"],
+  form input[type="text"],
+  form input[type="email"],
+  form select {
+    margin-left: 10px;
+  }
+  .register_page label {
+    font-size: small;
+    text-align: center;
+  }
+  .register_page {
+    padding: 20px 0 0 !important;
+  }
+}
+@media screen and (max-width: 300px) {
+  .register_page label {
+    font-size: x-small;
+  }
+}

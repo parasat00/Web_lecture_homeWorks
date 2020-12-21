@@ -25,7 +25,6 @@ footer a:hover {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 .lor section {
   padding: 30px;
@@ -57,6 +56,10 @@ footer a:hover {
   padding: 20px 0;
   margin-bottom: 20px;
 }
+.fat button:hover,
+input[type="button"]:hover {
+  background: #555;
+}
 .fat button,
 input[type="button"] {
   padding: 0.7em 2em;
@@ -77,6 +80,7 @@ input[type="button"] {
   display: block;
   margin: 20px 0 10px;
 }
+.reg input[type="email"],
 .reg input[type="text"],
 .reg input[type="password"] {
   border: 1px solid #dbe8ed;
@@ -93,10 +97,13 @@ input[type="button"] {
 .fp a:hover {
   color: #1a8de6;
 }
+.advertisement {
+  background: #eaf5f8;
+}
+/*  */
 @media screen and (max-width: 1100px) {
   .acc {
     padding: 15px 7vw 15px 10px !important;
-    font-size: 2vw;
   }
   .lor section i {
     font-size: 40px;
@@ -138,5 +145,16 @@ input[type="button"] {
   }
   .log {
     margin: 20px 0;
+  }
+  [data-aos] {
+    transform: translateX(0);
+  }
+}
+@media screen and (max-width: 450px) {
+  .acc {
+    font-size: medium;
+  }
+  form input[type="email"] {
+    width: 80% !important;
   }
 }
